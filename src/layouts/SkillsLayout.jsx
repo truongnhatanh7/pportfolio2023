@@ -53,7 +53,13 @@ const Wrapper = styled("div", {
 const Content = styled("div", {
   maxWidth: "$maxBound",
   margin: "0 auto",
-  transform: "rotateY(30deg) translateX(80px)"
+  transform: "rotateY(30deg) translateX(80px)",
+  "@tablet": {
+    transform: "rotateY(30deg) translateX(60px)",
+  },
+  "@mobile": {
+    transform: "rotateY(30deg) translateX(20px)",
+  }
 })
 
 const TagsWrapper = styled("div", {

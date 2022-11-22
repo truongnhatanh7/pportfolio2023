@@ -40,6 +40,9 @@ const Wrapper = styled("div", {
   animation: `${fancyBlobAnimation} 5s infinite alternate ease-in-out`,
   display: "grid",
   placeItems: "center",
+  "@tablet": {
+    width: "90vw"
+  }
 })
 
 const ContentWrapper = styled("div", {

@@ -39,6 +39,7 @@ const Wrapper = styled("div", {
   placeItems: "center",
   animation: `${shakingAppear} 100ms`,
   perspective: "100px",
+
 })
 
 const Content = styled("div", {
@@ -47,6 +48,11 @@ const Content = styled("div", {
   flexWrap: "wrap",
   margin: "0 auto",
   transformStyle: "preserve-3d",
+  "@tablet": {
+    width: "90%",
+    transformStyle: "flat",
+    
+  }
 
 })
 

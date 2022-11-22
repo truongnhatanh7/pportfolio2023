@@ -10,6 +10,11 @@ const Navbar = () => {
       </Name>
 
       <NavList>
+          <Link href="/">
+            <NavItem>
+              HOME
+            </NavItem>
+          </Link>
           <Link href="/about">
             <NavItem>
               ABOUT
@@ -38,6 +43,7 @@ const Wrapper = styled("div", {
   height: "$navbar$default",
   background: "$background",
   zIndex: 9999,
+  
 })
 
 const Content = styled("div", {
@@ -46,7 +52,10 @@ const Content = styled("div", {
   height: "100%",
   width: "$maxBound",
   margin: "0 auto",
-  fontWeight: "$semiBold"
+  fontWeight: "$semiBold",
+  "@tablet": {
+    width: "90%",
+  }
 })
 
 const Name = styled("div", {
@@ -55,6 +64,9 @@ const Name = styled("div", {
   "&:hover": {
     color: "white",
     transform: "scale(1.08)"
+  },
+  "@tablet": {
+    display: "none",
   }
 })
 
@@ -66,6 +78,11 @@ const NavList = styled("ul", {
   gap: "$x2",
   perspective: "1300px",
   perspectiveOrigin: "100% 50%",
+  "@tablet": {
+    gap: "$x1",
+    margin: "0 auto",
+    justifyContent: "space-between"
+  }
 })
 
 const NavItem = styled("li", {
@@ -92,12 +109,14 @@ const NavItem = styled("li", {
     width: "100%",
     background: "white",
     transform: "translateZ(36px) rotateY(-160deg)",
-
-  }
+  },
 })
 
 const Link = styled("a", {
   color: "$primary",
+  "@tablet": {
+    flex: 1,
+  }
 })
 
 

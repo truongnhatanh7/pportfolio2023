@@ -39,6 +39,9 @@ const TryHover = styled("div", {
   position: "absolute",
   top: 120,
   opacity: .5,
+  "@tablet": {
+    display: "none"
+  }
 })
 
 const P = styled("p", {
@@ -53,6 +56,10 @@ const P = styled("p", {
   borderRadius: 2,
   "&:hover": {
     transform: "rotateY(0deg) translateX(-50px) scale(1.2)",
+  },
+  "@tablet": {
+    transform: "rotateY(0deg)",
+    background: "transparent"
   }
 
 })
@@ -68,6 +75,9 @@ const ImageWrapper = styled("div", {
   transition: ".6s",
   "&:hover": {
     transform: "rotateY(0deg) translateX(180px)",
+  },
+  "@tablet": {
+    display: "none"
   }
 })
 

@@ -54,8 +54,11 @@ const Wrapper = styled("div", {
     transform: "rotateY(0deg)",
     cursor: "pointer",
   },
-  animation: `${omgAnimation} 6s infinite alternate ease-in-out`
+  animation: `${omgAnimation} 6s infinite alternate ease-in-out`,
 
+  "@tablet": {
+    animation: "none"
+  }
 
 })
 
@@ -69,6 +72,10 @@ const ImagePlaceholder = styled("div", {
   maxWidth: 300,
   background: "linear-gradient(to top, $gray, $primary)",
   borderRadius: 8,
+  "@tablet": {
+    display: "none",
+  },
+
 })
 
 const Image = styled("img", {
@@ -77,11 +84,23 @@ const Image = styled("img", {
 
 const Content = styled("div", {
   marginTop: "$x6",
+  width: "100%",
+  "@tablet": {
+    marginTop: 0,
+  }
 })
 
 const Title = styled("h1", {
+  width: "100%",
+  maxWidth: "100%",
   fontWeight: "$semiBold",
   fontSize: "$24px",
+  overflow: "hidden",
+  textOverflow: "ellipsis",
+  whiteSpace: "nowrap",
+  "@tablet": {
+    fontSize: '$18px'
+  }
 })
 
 export default Card;
