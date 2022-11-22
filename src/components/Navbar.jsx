@@ -10,21 +10,21 @@ const Navbar = () => {
       </Name>
 
       <NavList>
-        <NavItem>
           <Link href="/about">
-          ABOUT
+            <NavItem>
+              ABOUT
+            </NavItem>
           </Link>
-        </NavItem>
-        <NavItem>
         <Link href="/skills">
-          SKILLS
+            <NavItem>
+              SKILLS
+            </NavItem>
           </Link>
-        </NavItem>
-        <NavItem>
         <Link href="/projects">
-          PROJECTS
+            <NavItem>
+              PROJECTS
+            </NavItem>
           </Link>
-        </NavItem>
       </NavList>
     </Content>
   </Wrapper>)

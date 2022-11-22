@@ -10,7 +10,7 @@ const AboutLayout = () => {
       TRY TO HOVER THE CONTENT BELOW
     </TryHover>
     <P>
-    I'm currently studying Software Engineering at RMIT Vietnam University, <br></br>former Intern frontend web developer at SpiritLabs. <br></br>Now I'm working at SKDV startup as frontend web developer and R&D.<br></br> My skills are very dynamic and can adapt very quickly in any working environments.
+    I'm currently studying Software Engineering at RMIT Vietnam University, <br></br>former Intern frontend web developer at SpiritLabs. <br></br>Now I'm working at SKDV startup as frontend web developer and R&D.<br></br> My skills are dynamic and can adapt quickly in any working environments.
     </P>
     <ImageWrapper
       css={{
@@ -52,7 +52,6 @@ const P = styled("p", {
   borderRadius: 2,
   "&:hover": {
     transform: "rotateY(0deg) translateX(-50px) scale(1.2)",
-    borderRadius: 16,
   }
 
 })
