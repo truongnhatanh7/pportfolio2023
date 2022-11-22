@@ -19,7 +19,7 @@ export const reset = {
 
   [`html, body`]: {
     height: '100%',
-    background: "$background",
+    background: "linear-gradient(to bottom, $background, #0c0c0d)",
     fontFamily: "'Montserrat', sans-serif",
     fontSize: "14px",
     color: "$primary",

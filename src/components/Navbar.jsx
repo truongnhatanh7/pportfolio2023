@@ -4,18 +4,26 @@ const Navbar = () => {
   return (<Wrapper>
     <Content>
       <Name>
+        <Link href="/">
         NANH
+        </Link>
       </Name>
 
       <NavList>
         <NavItem>
+          <Link href="/about">
           ABOUT
+          </Link>
         </NavItem>
         <NavItem>
+        <Link href="/skills">
           SKILLS
+          </Link>
         </NavItem>
         <NavItem>
+        <Link href="/projects">
           PROJECTS
+          </Link>
         </NavItem>
       </NavList>
     </Content>
@@ -29,6 +37,7 @@ const Wrapper = styled("div", {
   right: 0,
   height: "$navbar$default",
   background: "$background",
+  zIndex: 9999,
 })
 
 const Content = styled("div", {
@@ -41,7 +50,12 @@ const Content = styled("div", {
 })
 
 const Name = styled("div", {
-  color: "$primary"
+  color: "$primary",
+  transition: ".6s",
+  "&:hover": {
+    color: "white",
+    transform: "scale(1.08)"
+  }
 })
 
 const NavList = styled("ul", {
@@ -69,15 +83,21 @@ const NavItem = styled("li", {
     background: "$primary",
   },
   "&:hover": {
+    color: "white",
     cursor: "pointer",
-    transform: "translateZ(48px) rotateY(-26deg)",
+    transform: "translateZ(8px) rotateY(-6deg)",
     width: "100%",
   },
   "&:hover:before": {
     width: "100%",
+    background: "white",
     transform: "translateZ(36px) rotateY(-160deg)",
 
   }
+})
+
+const Link = styled("a", {
+  color: "$primary",
 })
 
 
