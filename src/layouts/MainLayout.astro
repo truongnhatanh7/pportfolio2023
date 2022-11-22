@@ -1,0 +1,22 @@
+---
+import Button from "../components/Button"
+import Navbar from "../components/Navbar";
+import StitchesConfig from "../components/StichesConfig"
+const data = "test data"
+---
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<StitchesConfig client:load/>
+		<title>Astro</title>
+	</head>
+	<body>
+    <Navbar />
+    <slot />
+	</body>
+</html>
