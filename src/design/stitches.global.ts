@@ -23,7 +23,7 @@ export const reset = {
     fontFamily: "'Montserrat', sans-serif",
     fontSize: "14px",
     color: "$primary",
-    overflowX: "hidden",
+    overflow: "hidden",
     scrollBehavior: "smooth",
   },
 

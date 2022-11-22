@@ -1,4 +1,4 @@
-import { styled } from "../design/stitches.config"
+import { styled, shakingAppear } from "../design/stitches.config"
 import { useState } from "react"
 import Tag from "../components/Tag"
 
@@ -46,6 +46,8 @@ const Wrapper = styled("div", {
   display: "grid",
   placeItems: "center",
   perspective: "1003px",
+  animation: `${shakingAppear} 100ms`
+
 })
 
 const Content = styled("div", {

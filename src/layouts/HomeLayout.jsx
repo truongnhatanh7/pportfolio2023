@@ -1,4 +1,4 @@
-import { styled } from "../design/stitches.config"
+import { styled, shakingAppear } from "../design/stitches.config"
 import FancyBlob from "../components/FancyBlob"
 
 const HomeLayout = () => {
@@ -12,6 +12,7 @@ const Wrapper = styled("div", {
   width: "100vw",
   display: "grid",
   placeItems: "center",
+  animation: `${shakingAppear} 100ms`
 })
 
 export default HomeLayout;

@@ -40,3 +40,27 @@ export const globalStyle = globalCss({
   ...utilityClass,
   ...globalTypo,
 });
+
+export const shakingAppear = keyframes({
+  "0%": {
+    opacity: 0,
+    transform: "translateX(30px)"
+  },
+  "25%": {
+    opacity: .2,
+    transform: "translateX(-20px)"
+  },
+  "50%": {
+    opacity: .7,
+    transform: "translateX(18px)"
+
+  },
+  "75%": {
+    opacity: 1,
+    transform: "translateX(-10px)"
+  },
+  "100%": {
+    opacity: 1,
+    transform: "translateX(0px)"
+  }
+})

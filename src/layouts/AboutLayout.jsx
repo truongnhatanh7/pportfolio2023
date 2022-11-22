@@ -1,4 +1,4 @@
-import { styled, keyframes } from "../design/stitches.config"
+import { styled, keyframes, shakingAppear } from "../design/stitches.config"
 import { useState, useRef } from "react"
 
 const AboutLayout = () => {
@@ -30,6 +30,7 @@ const Wrapper = styled("div", {
   display: "grid",
   placeItems: "center",
   perspective: "100px",
+  animation: `${shakingAppear} 100ms`
 
 })
 
