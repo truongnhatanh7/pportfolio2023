@@ -1,4 +1,4 @@
-import { styled } from "../design/stitches.config"
+import { styled, keyframes } from "../design/stitches.config"
 
 const Card = (props) => {
 
@@ -22,6 +22,27 @@ const Card = (props) => {
   </Wrapper>)
 }
 
+const omgAnimation = keyframes({
+  "0%": {
+  transform: "rotateY(0deg) scale(0.9)",
+
+  },
+  "25%": {
+    transform: "rotateY(6deg) scale(0.9)",
+
+  },
+  "50%": {
+    transform: "rotateY(70deg) scale(0.9)",
+  },
+  "75%": {
+    transform: "rotateY(6deg) scale(0.9)",
+
+  },
+  "100%": {
+    transform: "rotateY(0deg) scale(0.9)",
+  }
+})
+
 const Wrapper = styled("div", {
   padding: "$x4",
   background: "$gray",
@@ -32,8 +53,9 @@ const Wrapper = styled("div", {
     opacity: .8,
     transform: "rotateY(0deg)",
     cursor: "pointer",
+  },
+  animation: `${omgAnimation} 6s infinite alternate ease-in-out`
 
-  }
 
 })
 
